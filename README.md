@@ -28,13 +28,13 @@
 
 1.  Prototype
 
-![](/Users/jeonsang-gyu/Documents/Project/SSANG/Images/prototype.png)
+![](./Images/prototype.png)
 
 2. Camera
 
-![](/Users/jeonsang-gyu/Documents/Project/SSANG/Images/camera.png)
+![](./Images/camera.png)
 
 3. Function
 
-![](/Users/jeonsang-gyu/Documents/Project/SSANG/Images/function_1.png)
+![ d](./Images/function_1.png)
 
