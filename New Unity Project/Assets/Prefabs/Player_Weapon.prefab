@@ -19,6 +19,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4915776003702816}
+  - component: {fileID: 54502823059210224}
+  - component: {fileID: 114506588016351262}
   m_Layer: 0
   m_Name: Player_Weapon
   m_TagString: Untagged
@@ -37,10 +39,9 @@ GameObject:
   - component: {fileID: 33181615424676844}
   - component: {fileID: 23210696623812706}
   - component: {fileID: 135250349018626624}
-  - component: {fileID: 114223752715701246}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +57,6 @@ GameObject:
   - component: {fileID: 33002204113614370}
   - component: {fileID: 23193816886644392}
   - component: {fileID: 135866888820526744}
-  - component: {fileID: 114556741997860240}
   m_Layer: 0
   m_Name: Bullet (1)
   m_TagString: Untagged
@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: 33394856105587496}
   - component: {fileID: 23736111994148088}
   - component: {fileID: 135659553750277564}
-  - component: {fileID: 114056516168970002}
   m_Layer: 0
   m_Name: Bullet (3)
   m_TagString: Untagged
@@ -94,7 +93,6 @@ GameObject:
   - component: {fileID: 33536629479380630}
   - component: {fileID: 23428114316653664}
   - component: {fileID: 135424571087277708}
-  - component: {fileID: 114437350553370734}
   m_Layer: 0
   m_Name: Bullet (2)
   m_TagString: Untagged
@@ -339,50 +337,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1515468202176190}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114056516168970002
+--- !u!54 &54502823059210224
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1109893626207688}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &114506588016351262
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1276609571026658}
+  m_GameObject: {fileID: 1109893626207688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8ff53116ac24c42a78806047440a82, type: 3}
+  m_Script: {fileID: 11500000, guid: 413fb6060bda3437d8e3ff10bd6b3364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114223752715701246
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1150113695996428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8ff53116ac24c42a78806047440a82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114437350553370734
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1515468202176190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8ff53116ac24c42a78806047440a82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114556741997860240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1173116326576164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8ff53116ac24c42a78806047440a82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!135 &135250349018626624
 SphereCollider:
   m_ObjectHideFlags: 1
